@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="61px" viewBox="0 0 60 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>ReverScore Big Icon</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Desktop-Pixel-Perfect" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="04_01_DesktopDash_InnovationStats" sketch:type="MSArtboardGroup" transform="translate(-344.000000, -174.000000)">
+            <g id="Reversocre" sketch:type="MSLayerGroup" transform="translate(18.000000, 150.000000)">
+                <g id="Rever-Score" transform="translate(328.000000, 25.000000)" sketch:type="MSShapeGroup">
+                    <g id="REverScore">
+                        <g id="ReverScore-Big-Icon">
+                            <path d="M39.6971539,14.8496349 C36.6279442,12.1365561 32.6102865,10.4918191 28.2177534,10.4918191 C18.5729905,10.4918191 10.7535927,18.4045188 10.7535927,28.1643642 C10.7535927,28.4056459 10.760216,28.6469276 10.7708132,28.8868688 L1.6492863,20.4554134 C4.95428333,8.75995258 15.5991555,0.201154018 28.2177534,0.201154018 C43.4776996,0.201154018 55.8485883,12.720994 55.8485883,28.1643642 C55.8485883,28.6884817 55.8340172,29.2125992 55.8048749,29.7300144 L39.6971539,14.8496349 Z" id="Fill-12" fill="#1783C6"></path>
+                            <path d="M16.0682134,40.8563185 C19.2102787,43.9366817 23.4928661,45.8361049 28.2178859,45.8361049 C37.8613241,45.8361049 45.6793972,37.9234052 45.6793972,28.1635599 C45.6793972,27.92764 45.6740986,27.6930605 45.6661507,27.4558002 L54.782379,35.8845747 C51.4734081,47.5733333 40.8325098,56.12677 28.2178859,56.12677 C12.9552904,56.12677 0.584401689,43.6082705 0.584401689,28.1635599 C0.584401689,27.6434637 0.598972818,27.127389 0.626790428,26.6126546 L16.0682134,40.8563185 Z" id="Fill-14" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

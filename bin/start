@@ -1,0 +1,14 @@
+#!/bin/bash
+
+function doesContainerExists() {
+  containerExists=$(docker ps -a | grep reverweb_web_1 | awk '{print $1}')
+  echo $containerExists
+}
+
+containerId=$(doesContainerExists)
+if [ -n "${containerId}" ]; then
+  docker-compose stop web
+  docker-compose start web
+else
+  docker-compose up -d
+fi

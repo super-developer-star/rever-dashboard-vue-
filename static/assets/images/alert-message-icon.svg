@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="41px" height="31px" viewBox="0 0 41 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>AlertMessage_Icon</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Mobile-Pixel-Perfect" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="02_03_MobileDash_InviteAlert" sketch:type="MSArtboardGroup" transform="translate(-100.000000, -148.000000)" fill="#FF6600">
+            <g id="Invite-People" sketch:type="MSLayerGroup" transform="translate(10.000000, 136.000000)">
+                <g id="AlertMessage_Icon" transform="translate(90.000000, 12.000000)" sketch:type="MSShapeGroup">
+                    <path d="M0.285012639,0.258064516 L0.285012639,31 L40.3213343,31 L40.3213343,0.258064516 L0.285012639,0.258064516 L0.285012639,0.258064516 Z M37.4262242,2.81989247 L20.3031735,16.8305128 L20.3031735,16.7498069 L3.20642116,2.81989247 L37.4262242,2.81989247 L37.4262242,2.81989247 Z M2.78728274,28.438172 L2.78728274,5.16525434 L20.3031735,19.5114909 L37.8190642,5.16525434 L37.8190642,28.438172 L2.78728274,28.438172 L2.78728274,28.438172 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

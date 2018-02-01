@@ -1,0 +1,27 @@
+server {
+  listen 80;
+  server_name local.reverscore.net
+  rewrite ^(.*) https://localhost$1 permanent;
+}
+
+server {
+  listen               443;
+  ssl                  on;
+  ssl_certificate      /etc/ssl/certs/nginx-selfsigned.crt;
+  ssl_certificate_key  /etc/ssl/certs/nginx-selfsigned.key;
+  keepalive_timeout    70;
+  server_name localhost;
+
+  location / {
+    try_files $uri $uri/ /index.html;
+    root   /usr/share/nginx/html;
+    index  index.html index.htm;
+  }
+
+  location = /50x.html {
+    root   /usr/share/nginx/html;
+  }
+
+  access_log  /var/log/nginx-access.log main;
+  error_log /var/log/nginx-error.log;
+}

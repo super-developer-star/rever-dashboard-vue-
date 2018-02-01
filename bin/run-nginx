@@ -1,0 +1,54 @@
+#!/bin/sh
+
+# Given an environment, it will replaces all ocurrances of
+# @@ENVIRONMENT@@, @@API_URL@@ and @@MIXPANEL_TOKEN@@ in all files so the
+# variables on runtime point to the right values
+# If any of those values are not passed, the container will not run
+
+set -e
+set -u
+
+echo "The current environment is: ${ENVIRONMENT}"
+echo "Value to use for api is: ${API_URL}"
+echo "Replacing variables"
+
+cd /usr/share/nginx/html
+# echo "Replacing:"
+#
+# grep "@@ENVIRONMENT@@" *.js
+# sed -i "s|@@ENVIRONMENT@@|${ENVIRONMENT}|g" *.js
+#
+# echo "Replaced"
+# grep "${ENVIRONMENT}" *.js
+#
+# echo "Replacing:"
+# grep "@@API_URL@@" *.js
+# sed -i "s|@@API_URL@@|${API_URL}|g" *.js
+#
+# echo "Replaced"
+# grep "${API_URL}" *.js
+#
+# echo "Replacing:"
+# grep "@@MIXPANEL_TOKEN@@" *.js
+# sed -i "s|@@MIXPANEL_TOKEN@@|${MIXPANEL_TOKEN}|g" *.js
+#
+# echo "Replacing:"
+# grep "@@INTERCOM_TOKEN@@" *.js
+# sed -i "s|@@INTERCOM_TOKEN@@|${INTERCOM_TOKEN}|g" *.js
+#
+# echo "Replacing:"
+# grep "@@YAMMER_CLIENT_ID@@" *.js
+# sed -i "s|@@YAMMER_CLIENT_ID@@|${YAMMER_CLIENT_ID}|g" *.js
+#
+# echo "Replacing:"
+# grep "@@YAMMER_REDIRECT_URI@@" *.js
+# sed -i "s|@@YAMMER_REDIRECT_URI@@|${YAMMER_REDIRECT_URI}|g" *.js
+#
+# echo "Replacing nginx configuration"
+# sed -i "s|@@APPLICATION_URL@@|${APPLICATION_URL}|g" /etc/nginx/conf.d/default.conf
+
+echo "Showing nginx configuration"
+cat /etc/nginx/conf.d/default.conf
+
+echo "Starting nginx in the foreground"
+exec nginx -g 'daemon off;' "$@"

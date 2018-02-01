@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.4 (381) - http://www.bohemiancoding.com/sketch -->
+    <title>Logout_Icon_Off</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Mobile-Pixel-Perfect" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="00_00_MobileDash_Menu-" sketch:type="MSArtboardGroup" transform="translate(-17.000000, -266.000000)" fill="#FFFFFF">
+            <g id="Logout" sketch:type="MSLayerGroup" transform="translate(0.000000, 250.000000)">
+                <g id="Logout_Icon_Off" transform="translate(17.000000, 16.000000)" sketch:type="MSShapeGroup">
+                    <path d="M6.54544118,9.81817647 L15.9545294,9.81817647 L13.9090882,13.0909118 L15.5454706,13.0909118 L18,9 L15.5454706,4.90908824 L13.9090882,4.90908824 L15.9545294,8.18182353 L6.54544118,8.18182353 L6.54544118,9.81817647 Z" id="Shape"></path>
+                    <path d="M0,18 L13.0909118,18 L13.0909118,12.6818235 L11.4545294,12.6818235 L11.4545294,16.3636176 L1.63635294,16.3636176 L1.63635294,1.63635294 L11.4545294,1.63635294 L11.4545294,5.31817647 L13.0909118,5.31817647 L13.0909118,0 L0,0 L0,18 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

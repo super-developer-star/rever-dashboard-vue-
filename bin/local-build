@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Cleaning up"
+rm -Rf node_modules dist
+
+npm install
+
+echo "Building project"
+npm run build
+
+echo "Building docker image"
+IMAGE_NAME=rever/dashboard
+docker build --tag=$IMAGE_NAME .

@@ -1,0 +1,56 @@
+#!/bin/bash
+
+ENVIRONMENT=$1
+defaultPort=80
+MIXPANEL_TOKEN=662ca7f26108368b4b3788fab125c801
+INTERCOM_TOKEN=qqn1u75u
+YAMMER_CLIENT_ID=111
+YAMMER_REDIRECT_URI=http://localhost:3001/access/yammer
+APPLICATION_URL=local.reverscore.net
+
+API_URL=""
+case $ENVIRONMENT in
+  'useast1-devtest01')
+    API_URL="http://isis76-devtest.reverscore.net"
+  ;;
+  'dev')
+    API_URL="http://localhost:7080"
+  ;;
+  *)
+  echo "You need to pass a valid environment as the first argument. Example: bin/docker-run dev"
+  exit 1
+esac
+
+function doesContainerExists() {
+  containerExists=$(docker ps -a | grep rever-dashboard | awk '{print $1}')
+  echo $containerExists
+}
+
+function removeContainer() {
+  containerId=$1
+  docker stop $containerId > /dev/null
+  docker rm $containerId > /dev/null
+}
+
+function startContainer() {
+  docker run -d -p $defaultPort:80 \
+      -e "ENVIRONMENT=$ENVIRONMENT" \
+      -e "API_URL=${API_URL}" \
+      -e "MIXPANEL_TOKEN=${MIXPANEL_TOKEN}" \
+      -e "INTERCOM_TOKEN=${INTERCOM_TOKEN}" \
+      -e "YAMMER_CLIENT_ID=${YAMMER_CLIENT_ID}" \
+      -e "YAMMER_REDIRECT_URI=${YAMMER_REDIRECT_URI}" \
+      -e "APPLICATION_URL=${APPLICATION_URL}" \
+      --name rever-dashboard rever/dashboard
+
+  echo "Rever Dashboard running on http://localhost:$defaultPort"
+}
+
+containerId=$(doesContainerExists)
+if [ -n "${containerId}" ]; then
+  echo "Removing existing container $containerId"
+  removeContainer $containerId
+fi
+
+echo "Starting container pointing to API ${API_URL}"
+startContainer

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Building docker image"
+IMAGE_NAME=rever/dashboard
+docker build --tag=$IMAGE_NAME .
